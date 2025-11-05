@@ -33,23 +33,50 @@ aside {
 }
 
 /* HTML і BODY */
-html,
-body {
-	height: 100%;
-	width: 100%;
-	font-size: 14px;
-	line-height: 1.5;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	scrollbar-gutter: stable;
-	scroll-behavior: smooth;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100vw;              /* Повна ширина viewport */
+    overflow-x: hidden;        /* Забирає горизонтальний скрол */
+    font-size: 14px;
+    line-height: 1.5;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+
+    /* Кастомний скролбар для Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #f5f5f5 #222;
+}
+
+/* Кастомний скролбар для Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #222;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    border: 2px solid #222;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #ff6b6b; /* підсвітка при ховері */
 }
 
 /* Body */
 body {
 	min-height: 100%;
 	font-family: inherit;
+	overflow-x: hidden; /* тільки горизонтальний скрол */
 }
 
 /* Заголовки */

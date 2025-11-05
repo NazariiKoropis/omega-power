@@ -1,12 +1,18 @@
-import Home from './pages/Home.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
+import Home from './pages/Home'
+import About from './pages/About'
 
-function App() {
-
+export default function App() {
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }
-
-export default App

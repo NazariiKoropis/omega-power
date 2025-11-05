@@ -1,0 +1,34 @@
+.heroSection {
+  background-image: url('../../assets/bg-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.heroContent {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: 'Story Script', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+
+.heroTitle {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.heroSubtitle {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
