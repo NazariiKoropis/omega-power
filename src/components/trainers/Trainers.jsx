@@ -21,7 +21,7 @@ export default function Trainers() {
           </ul>
 
           <div className="button-container">
-            <Button onClick={() => alert()}>Book</Button>
+            <Button onClick={() => alert('Steve')}>Book</Button>
           </div>
         </div>
         <div className={styles.itemImage}>
