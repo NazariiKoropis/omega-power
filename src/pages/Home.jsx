@@ -1,11 +1,13 @@
 import Hero from '../components/hero/Hero.jsx'
-import Test from '../components/test/Test.jsx'
+import Trainers from '../components/trainers/Trainers.jsx'
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Test />
+      <Trainers />
+      <Trainers />
+      <Trainers />
     </>
   )
 }

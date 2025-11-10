@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 40px;
+  padding: 10px 40px;
   background-color: #222;
   position: sticky;
 }
@@ -27,4 +27,17 @@
   font-style: normal;
   letter-spacing: 1.5px;
   line-height: 1.2;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .h1Header {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+  }
 }

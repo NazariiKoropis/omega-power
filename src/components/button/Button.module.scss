@@ -24,3 +24,11 @@
     transform: none;
   }
 }
+
+
+@media (max-width: 768px) {
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
