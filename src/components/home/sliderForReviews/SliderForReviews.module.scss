@@ -1,0 +1,118 @@
+.sliderContainer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    .sliderTitle {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .slick-slide > div {
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .slideItem {
+        background-color: #333;
+        color: #fff;
+        border-radius: 8px;
+        text-align: justify;
+        font-size: 18px;
+        padding: 15px 20px;
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: white 2px solid;
+        position: relative;
+
+        .reviewerName {
+            margin-top: 0;
+            font-size: 22px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .reviewMark {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: gold;
+            color: #000;
+            font-weight: 700;
+            padding: 5px 10px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            font-size: 28px;
+        }
+
+        .reviewText {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 10px;
+            color: #ddd;
+        }
+    }
+
+    // Адаптив
+    @media (max-width: 768px) {
+        .sliderTitle {
+            font-size: 28px;
+        }
+
+        .slideItem {
+            padding: 12px 15px;
+            font-size: 16px;
+            min-height: 130px;
+
+            .reviewerName {
+                font-size: 20px;
+            }
+
+            .reviewMark {
+                width: 35px;
+                height: 35px;
+                font-size: 24px;
+            }
+
+            .reviewText {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .sliderTitle {
+            font-size: 24px;
+        }
+
+        .slideItem {
+            padding: 10px 12px;
+            font-size: 14px;
+            min-height: 120px;
+
+            .reviewerName {
+                font-size: 18px;
+            }
+
+            .reviewMark {
+                width: 30px;
+                height: 30px;
+                font-size: 20px;
+            }
+
+            .reviewText {
+                font-size: 14px;
+            }
+        }
+    }
+}

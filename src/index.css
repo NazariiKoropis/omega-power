@@ -45,6 +45,7 @@ html, body {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
+	background-color: #222;
 
     /* Кастомний скролбар для Firefox */
     scrollbar-width: thin;
@@ -93,7 +94,6 @@ h6 {
 
 /* Параграфи */
 p {
-	--paragraphMarginBottom: 24px;
 	margin-block: 0;
 }
 p:where(:not([class]):not(:last-child)) {

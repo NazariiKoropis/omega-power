@@ -1,0 +1,203 @@
+/* =============================
+   ABOUT PAGE — GLOBAL WRAPPER
+============================= */
+
+.wrapper {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =============================
+   HERO SECTION
+============================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    /* легка маска справа */
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1));
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1));
+}
+
+.heroOverlay {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.heroOverlay h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.heroOverlay p {
+    font-size: 22px;
+    opacity: 0.85;
+}
+
+/* =============================
+   HISTORY SECTION
+============================= */
+
+.history {
+    padding: 50px 40px;
+}
+
+.history h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.history p {
+    font-size: 18px;
+    opacity: 0.85;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* ------ GALLERY ------ */
+
+.gallery {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 230px;
+
+    transition: 0.25s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* =============================
+   CONTACTS SECTION
+============================= */
+
+.contacts {
+    padding: 50px 40px;
+    background: #0d0d0d;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+
+.contacts h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contacts ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+/* =============================
+   FAQ SECTION
+============================= */
+
+.faq {
+    padding: 50px 40px;
+}
+
+.faq h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.faqItem {
+    background: #111;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #1a1a1a;
+    transition: 0.2s ease;
+}
+
+.faqItem:hover {
+    background: #151515;
+}
+
+.faqItem h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.faqItem p {
+    opacity: 0.85;
+    line-height: 1.4;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .heroOverlay h1 {
+        font-size: 38px;
+    }
+
+    .heroOverlay p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 300px;
+    }
+
+    .heroOverlay {
+        left: 20px;
+        bottom: 25px;
+    }
+
+    .heroOverlay h1 {
+        font-size: 28px;
+    }
+
+    .heroOverlay p {
+        font-size: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .history,
+    .contacts,
+    .faq {
+        padding: 30px 20px;
+    }
+
+    .history p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,105 @@
+.wrapper {
+    width: 100%;
+    min-height: 80vh;
+    padding: 40px;
+    background: #000;
+    color: #fff;
+}
+
+/* ===== TITLE ===== */
+
+.title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* ===== CARD WITH INFO ===== */
+
+.infoCard {
+    background: #111;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #1d1d1d;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.infoCard p {
+    font-size: 18px;
+    opacity: 0.85;
+}
+
+.email {
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* ===== LOGOUT BUTTON ===== */
+
+.logoutBtn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #e3061b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.logoutBtn:hover {
+    background: #ff1a2a;
+}
+
+/* ===== FUTURE ADMIN SECTIONS ===== */
+
+.sections {
+    margin-top: 40px;
+}
+
+.sectionCard {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #1d1d1d;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.sectionCard:hover {
+    background: #151515;
+    transform: translateX(5px);
+}
+
+.sectionCard h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.sectionCard p {
+    opacity: 0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .infoCard {
+        padding: 18px;
+    }
+
+    .logoutBtn {
+        width: 100%;
+    }
+}

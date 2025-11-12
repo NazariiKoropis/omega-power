@@ -1,11 +1,17 @@
+import AboutHero from '../components/about/AboutHero'
+import AboutHistory from '../components/about/AboutHistory'
+import AboutContacts from '../components/about/AboutContacts'
+import AboutFAQ from '../components/about/AboutFAQ'
+
+import styles from './About.module.scss'
+
 export default function About() {
   return (
-    <>
-      <h1>About Us</h1>
-      <p>
-        Welcome to the About page of our website. Here you can learn more about
-        our mission and values.
-      </p>
-    </>
+    <div className={styles.wrapper}>
+      <AboutHero />
+      <AboutHistory />
+      <AboutContacts />
+      <AboutFAQ />
+    </div>
   )
 }

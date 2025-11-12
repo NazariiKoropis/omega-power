@@ -17,32 +17,32 @@ export default function Nav() {
         </li>
         <li>
           <NavLink
+            to="/Trainers"
+            className={({ isActive }) =>
+              isActive ? `${style.navItem} ${style.active}` : style.navItem
+            }
+          >
+            Trainers
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/memberships"
+            className={({ isActive }) =>
+              isActive ? `${style.navItem} ${style.active}` : style.navItem
+            }
+          >
+            Memberships
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/about"
             className={({ isActive }) =>
               isActive ? `${style.navItem} ${style.active}` : style.navItem
             }
           >
             About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/services"
-            className={({ isActive }) =>
-              isActive ? `${style.navItem} ${style.active}` : style.navItem
-            }
-          >
-            Services
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive ? `${style.navItem} ${style.active}` : style.navItem
-            }
-          >
-            Contact
           </NavLink>
         </li>
       </ul>
