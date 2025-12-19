@@ -13,7 +13,7 @@ export default function AboutContacts() {
           <strong>Телефон:</strong> +380 68 777 55 44
         </li>
         <li>
-          <strong>Email:</strong> support@omegapower.fit
+          <strong>Ел. пошта:</strong> support@omegapower.fit
         </li>
         <li>
           <strong>Графік роботи:</strong> Пн-Пт 06:00–23:00, Сб-Нд 08:00–21:00

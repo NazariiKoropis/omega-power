@@ -29,7 +29,7 @@ export default function Header() {
         <img
           src={logo}
           className={style.img}
-          alt="Omega Power logo"
+          alt="Логотип Omega Power"
           width="100"
           loading="lazy"
         />
@@ -39,11 +39,11 @@ export default function Header() {
         {/* AUTH BUTTONS */}
         <div className={style.buttons}>
           {!user ? (
-            <Button onClick={handleLoginClick}>Login</Button>
+            <Button onClick={handleLoginClick}>Увійти</Button>
           ) : (
             <>
-              <Button onClick={handleDashboardClick}>Dashboard</Button>
-              <Button onClick={handleLogoutClick}>Logout</Button>
+              <Button onClick={handleDashboardClick}>Адмін-панель</Button>
+              <Button onClick={handleLogoutClick}>Вийти</Button>
             </>
           )}
         </div>

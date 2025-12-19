@@ -25,9 +25,9 @@ export default function AboutHistory() {
       </p>
 
       <div className={styles.gallery}>
-        <img src={img1} alt="Gym" />
-        <img src={img2} alt="Gym" />
-        <img src={img3} alt="Gym" />
+        <img src={img1} alt="Тренажерний зал" />
+        <img src={img2} alt="Тренажерний зал" />
+        <img src={img3} alt="Тренажерний зал" />
       </div>
     </section>
   )

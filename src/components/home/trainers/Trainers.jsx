@@ -27,13 +27,17 @@ export default function Trainers({ trainer, reverse }) {
 
           <div className="button-container">
             <Button onClick={() => navigate(`/trainers/${trainer.id}`)}>
-              Book
+              Записатися
             </Button>
           </div>
         </div>
 
         <div className={styles.itemImage}>
-          <img src={imagePath} alt={`Trainer ${trainer.name}`} loading="lazy" />
+          <img
+            src={imagePath}
+            alt={`Тренер ${trainer.name}`}
+            loading="lazy"
+          />
         </div>
       </div>
     </section>

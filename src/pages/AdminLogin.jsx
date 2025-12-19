@@ -25,7 +25,7 @@ export default function AdminLogin() {
 
         <input
           type="email"
-          placeholder="Email"
+          placeholder="Ел. пошта"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />

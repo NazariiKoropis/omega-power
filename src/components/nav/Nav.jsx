@@ -12,17 +12,17 @@ export default function Nav() {
               isActive ? `${style.navItem} ${style.active}` : style.navItem
             }
           >
-            Home
+            Головна
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/Trainers"
+            to="/trainers"
             className={({ isActive }) =>
               isActive ? `${style.navItem} ${style.active}` : style.navItem
             }
           >
-            Trainers
+            Тренери
           </NavLink>
         </li>
         <li>
@@ -32,7 +32,7 @@ export default function Nav() {
               isActive ? `${style.navItem} ${style.active}` : style.navItem
             }
           >
-            Memberships
+            Абонементи
           </NavLink>
         </li>
         <li>
@@ -42,7 +42,7 @@ export default function Nav() {
               isActive ? `${style.navItem} ${style.active}` : style.navItem
             }
           >
-            About
+            Про нас
           </NavLink>
         </li>
       </ul>

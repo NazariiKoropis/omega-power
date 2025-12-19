@@ -20,7 +20,7 @@ export default function AboutFAQ() {
 
   return (
     <section className={styles.faq}>
-      <h2>FAQ</h2>
+      <h2>Поширені запитання</h2>
 
       {faq.map((item, i) => (
         <div key={i} className={styles.faqItem}>

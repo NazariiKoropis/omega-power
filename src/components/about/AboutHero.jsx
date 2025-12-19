@@ -4,7 +4,7 @@ import heroImg from '../../assets/about/gym1.png'
 export default function AboutHero() {
   return (
     <div className={styles.hero}>
-      <img src={heroImg} alt="Omega Power Gym" className={styles.heroImage} />
+      <img src={heroImg} alt="Тренажерний зал Omega Power" className={styles.heroImage} />
 
       <div className={styles.heroOverlay}>
         <h1>Про Omega Power</h1>
